@@ -17,6 +17,8 @@ public class Main {
         /*CompletableFuture<Object> ask12 = PatternsCS.ask(wordCountRef, new WordCountActor.CountWords("Count#Words#Of#This#Line", '#'), 1000).toCompletableFuture();
         ask12.get()*/
 
+        /* Adding comment here*/
+
         ask.onComplete(new OnComplete<Object>() {
             @Override
             public void onComplete( Throwable failure,  Object success) throws Throwable, Throwable {
@@ -32,6 +34,9 @@ public class Main {
         ask12.onComplete(new OnComplete<Object>() {
             @Override
             public void onComplete( Throwable failure,  Object success) throws Throwable, Throwable {
+
+                List<Integer> testList = new ArrayList<Integer>();
+                System.out.prinlln(testList.toString());
                 int words = (Integer) success;
                 System.out.println("words : "+ words);
             }
