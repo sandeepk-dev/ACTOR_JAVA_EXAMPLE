@@ -40,6 +40,10 @@ public class WordCountActor extends AbstractActor {
         }
     }
 
+    public static void testMethod() {
+        System.out.println("test message");
+    }
+
     public static class CountWords {
         private String line;
         private Character delimiter;
