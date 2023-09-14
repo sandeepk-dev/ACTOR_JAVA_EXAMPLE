@@ -19,6 +19,12 @@ public class MultiplierActor extends AbstractActor {
         }
     }
 
+    private void TestMethod() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        System.out.prinlln(list);
+        }
+
     @Override
     public Receive createReceive() {
         return  receiveBuilder().match(MultiplierMessage.class, multiplierMessage -> {
